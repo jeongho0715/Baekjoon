@@ -1,4 +1,7 @@
 while True:
-    a, b = map(int, input().split())
-    print(a+b)
+    try:
+        a, b = map(int, input().split())
+        print(a+b)
 
+    except EOFError:
+        break
